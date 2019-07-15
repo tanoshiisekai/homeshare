@@ -1,0 +1,50 @@
+body {
+    color: blue;
+}
+.card {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    background-color: lightgoldenrodyellow;
+}
+.content {
+    margin-left: 10px;
+    color: darkorchid;
+    float: left;
+    width: 80%;
+    overflow: auto;
+}
+.delete {
+    float: right;
+    margin-right: 10px;
+}
+.delete a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+#addpanel{
+    width: 100%;
+    margin-bottom:20px;
+}
+.addlink{
+    text-decoration: none;
+    color: deeppink;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inputbox{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 3px solid deeppink;
+}
+.infolink{
+    text-decoration: none;
+    color: dimgrey;
+    font-weight: bold;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小家剪贴板</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <script>
+        function checkenter() {
+            if (event.keyCode == 13) {
+                addinfo();
+            }
+        }
+    </script>
+</head>
+<body onkeydown="checkenter();">
+<div id="addpanel">
+    <input type="text" id="inputbox" class="inputbox"/>
+    <a href="#" onclick="addinfo()" class="addlink">添加新剪贴</a>
+</div>
+{% for info in infos %}
+<div class="card" id="{{ info[0] }}">
+    <div class="content">
+        {{ info[1] }}
+    </div>
+    <div class="delete">
+        <a href="#" onclick="deleteinfo('{{ info[0] }}')">删除</a>
+    </div>
+</div>
+{% endfor %}
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
